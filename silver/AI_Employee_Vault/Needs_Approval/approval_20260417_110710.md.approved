@@ -1,0 +1,28 @@
+# Approval Request: Test approval
+
+**Risk Level:** LOW
+**Requested:** 2026-04-17 11:07:10
+**Timeout:** 3 seconds
+
+## Action Details
+
+Testing the approval workflow
+
+---
+
+## Manager Decision Required
+
+Add one of the following to this file:
+
+**To Approve:**
+```
+DECISION: APPROVED
+```
+
+**To Reject:**
+```
+DECISION: REJECTED
+Reason: [Your reason here]
+```
+
+**Status:** Awaiting Decision

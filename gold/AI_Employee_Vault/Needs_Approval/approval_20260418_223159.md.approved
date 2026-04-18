@@ -1,0 +1,29 @@
+# Approval Request: Execute task: plan_20260418_120756.md
+
+**Risk Level:** MEDIUM
+**Requested:** 2026-04-18 22:31:59
+**Timeout:** 60 minutes
+
+## Action Details
+
+Task file: C:\Users\HP\Desktop\ai_employee\gold\AI_Employee_Vault\Needs_Action\plan_20260418_120756.md
+Risky keywords detected — requires approval.
+
+---
+
+## Manager Decision Required
+
+Add one of the following to this file:
+
+**To Approve:**
+```
+DECISION: APPROVED
+```
+
+**To Reject:**
+```
+DECISION: REJECTED
+Reason: [Your reason here]
+```
+
+**Status:** Awaiting Decision

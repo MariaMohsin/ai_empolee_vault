@@ -1,0 +1,42 @@
+services:
+
+  dashboard:
+    build: ./dashboard_app
+    container_name: ai_employee_dashboard
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./AI_Employee_Vault:/vault:ro
+      - ./Logs:/logs:ro
+
+  odoo:
+    image: odoo:17
+    container_name: ai_employee_odoo
+    restart: unless-stopped
+    ports:
+      - "8069:8069"
+    environment:
+      - HOST=db
+      - USER=odoo
+      - PASSWORD=odoo_pass
+    volumes:
+      - odoo_data:/var/lib/odoo
+      - ./config/odoo.conf:/etc/odoo/odoo.conf:ro
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15
+    container_name: ai_employee_postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo_pass
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  odoo_data:
+  postgres_data:

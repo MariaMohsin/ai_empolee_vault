@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "business-mcp": {
+      "command": "python",
+      "args": ["mcp/business_mcp/server.py"],
+      "cwd": "C:/Users/HP/Desktop/ai_employee/gold"
+    },
+    "odoo-mcp": {
+      "command": "python",
+      "args": ["mcp/odoo_mcp/server.py"],
+      "cwd": "C:/Users/HP/Desktop/ai_employee/gold"
+    }
+  }
+}

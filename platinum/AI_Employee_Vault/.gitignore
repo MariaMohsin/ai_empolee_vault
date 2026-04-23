@@ -1,0 +1,41 @@
+# ── Secrets (NEVER sync) ──────────────────────────────────────────────────────
+.env
+.env.*
+*.env
+*token*
+*session*
+*credential*
+*secret*
+*password*
+*cookie*
+
+# ── WhatsApp / browser sessions ───────────────────────────────────────────────
+.wwebjs_auth/
+.wwebjs_cache/
+whatsapp-session/
+playwright-state/
+
+# ── Python runtime ────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+
+# ── OS noise ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs (large, machine-generated) ──────────────────────────────────────────
+Logs/*.log
+Logs/*.lock
+Logs/processed_*.json
+Logs/error_index.json
+
+# ── Editor artifacts ──────────────────────────────────────────────────────────
+.obsidian/workspace
+.obsidian/cache
+*.tmp
+*.bak
